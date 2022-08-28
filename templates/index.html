@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bike Demand Predictor</title>
+</head>
+<body>
+
+    <h1>Bike Demand Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+
+        <label>hour</label><br>
+        <input type="text" name="hour"><br><br>
+
+        <label>rainfall</label><br>
+        <input type="text" name="rainfall"><br><br>
+
+        <label>snowfall</label><br>
+        <input type="text" name="snowfall"><br><br>
+
+        <label>temperature</label><br>
+        <input type="text" name="temperature"><br><br>
+
+        <label>dew_point_temperature</label><br>
+        <input type="text" name="dew_point_temp"><br><br>
+
+        <label>solar_radition</label><br>
+        <input type="text" name="solar_rad"><br><br>
+
+        <label>humidity</label><br>
+        <input type="text" name="humidity"><br><br>
+
+        <label>wind_speed</label><br>
+        <input type="text" name="wind_speed"><br><br>
+
+        <label>visibility</label><br>
+        <input type="text" name="visibility"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
